@@ -2,11 +2,15 @@
 body {
   font-family: "Roboto Mono", monospace;
   text-align: center;
- 
+  background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-04-aluraflix-e-filmes.png");
   background-color: #2649e9;
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+}
+
+h1, h2, p, span{
+  color: #ffffff;
 }
 
 .container {
@@ -26,13 +30,6 @@ body {
 
 .page-logo {
   width: 200px;
-}
-
-.alura-logo {
-  width: 40px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
 }
 
 .form-wrapper {
@@ -76,5 +73,30 @@ img {
 }
 
 label{
-color: yellow}
+color: yellow
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilização básica do menu horizontal */
+
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #555;
+}
 
