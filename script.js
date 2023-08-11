@@ -43,7 +43,7 @@ function adicionarFilme() {
     arrayFilmesImg = [filmeDigitado];
     arrayFilmesNomes = [nomeFilmeDigitado];
   } else if (arrayFilmesImg.includes(filmeDigitado)) {
-    mensagem.innerHTML = "Livro já  incluído";
+    mensagem.innerHTML = "Filme já  incluído";
     return;
   } else {
     mensagem.innerHTML = " ";
@@ -58,6 +58,18 @@ function adicionarFilme() {
   divOneFilm.innerHTML += "<label>" + arrayFilmesNomes[indice] + "</label>";
   divOneFilm.innerHTML += "<img src=" + arrayFilmesImg[indice] + ">";
 }
+
+function mostrarFilmes(){
+  var listaFilmes = [
+    "https://upload.wikimedia.org/wikipedia/pt/7/79/Yesterday_%282019%29_poster.jpg",
+    "https://1.bp.blogspot.com/-ImZPRqLsluE/WFK156_6pNI/AAAAAAAAYBY/0lEhNRF5wfQdLfr6hpT57_Jt2eBrE9H5wCLcB/s1600/arrival-kartoun-desert.jpg",
+    "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/91/90/98/20169244.jpg"
+  ];
+  
+  listaFilmes.forEach((item) => document.write("<img src=" + item + ">"));
+  
+}
+
 
 // https://br.web.img3.acsta.net/medias/nmedia/18/95/59/60/20417256.jpg
 // https://upload.wikimedia.org/wikipedia/pt/3/30/Star_Wars_Epis%C3%B3dio_1_Amea%C3%A7a_Fantasma.jpg
